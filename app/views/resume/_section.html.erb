@@ -1,0 +1,17 @@
+<div class="section">
+  <h2><%= c_s section.title %></h2>
+
+  <% items = section.items %>
+  <% if !items.empty? %>
+      <%= render :partial => "item", :collection => items %>
+  <% else %>
+      <% points_titles = section.points_titles %>
+      <% unless points_titles.empty? %>
+          <%= render :partial => "point_title", :collection => points_titles %>
+      <% else %>
+          <ul class="points">
+            <%= render :partial => "point", :collection => section.points %>
+          </ul>
+      <% end %>
+  <% end %>
+</div>

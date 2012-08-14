@@ -1,0 +1,23 @@
+<div class="item">
+  <div class="header">
+    <!--using h5 because of jobmine conflicts-->
+    <div class="clearfix">
+      <h5><%= item.title %></h5>
+      <div class="dates">
+        (<%= item.start_date.to_s(:m_y_short_small).downcase! %> - <%= handle_present_and_format(item.end_date, :m_y_short_small).downcase! %>)
+      </div>
+    </div>
+    <%= c_s item.organization %> - <%= c_s item.location %>
+  </div>
+
+  <% unless item.points.empty? %>
+      <ul class="points">
+        <%= render :partial => "point", :collection => item.points %>
+      </ul>
+  <% end %>
+
+  <% points_titles = item.points_titles %>
+  <% unless points_titles.empty? %>
+      <%= render :partial => "point_title", :collection => points_titles %>
+  <% end %>
+</div>

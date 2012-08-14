@@ -1,0 +1,47 @@
+== Introduction
+Welcome to my resume builder, a Ruby on Rails (Rails) project. Just be aware of spelling mistakes and the light tone in
+this readme and the comments (hey, I'm doing this during my free time). I'll edit my writing for version 1.xx.
+
+Anyway, I created this open source project because of these reasons:
+1. I want to show off my coding skills in a way that was easy for the employer
+2. I hate duplicating code. If I use DreamWeaver, I'd feel dirty copying and pasting HTML just to get the format right
+
+If you're considering using this project yourself, here's a list of pros and cons.
+Pros:
+- Flexible HTML/CSS (as long as database doesn't change)
+- Holds multiple resumes in the database
+- You get to show off your code
+Cons:
+- Need to know Ruby on Rails
+- Reads resume data through a YAML file, which is a bit tedious
+- No WYSIWYG interface
+- More work to add a new type of field on the resume (resulting to a database change)
+
+== Next Versions
+Next up is cleanup and implementing a WYSIWYG interface for editing text. Editing a YAML file is a bit weird to read.
+
+== Getting Around
+Well, if you're new to Rails, you're out of luck. I mean, I doubt any employer will have enough energy to learn Rails
+and figure out what is happening (I tried writing a quick guide for 10 minutes, but its just too long). I like Rails
+though, its gets things done (compared to Struts...).
+
+You should know two things about the ruby syntax though:
+1. You don't need to have a return statement to return something, each function returns the last expression
+2. Method calls don't need brackets
+3. {key1 => val1, key2 => val2} means a hash that maps the associated keys and values
+
+So here's where the meat of the project is by topic:
+Parsing with Regular Expressions – app/helpers/resume_helper.rb#c_s()
+Recursive YAML Parsing – app/models/resume.rb#self.load_data()
+HTML/CSS – its probably best to use firebug or some equivalent on the resume itself, see public/example_output.html
+
+The rest of it is just connecting the Model-View-Controller together, getting the database tables up and matching
+properly, and having pretty URLs.
+
+Hope it's not too confusing, its hard to explain with just text.
+
+== Why bitbucket and Merucial?
+I like Mecurial, its distributed and isn't as complicated as git. It's like the difference between Rails and other more
+complicated web frameworks.
+
+Thanks for reading!

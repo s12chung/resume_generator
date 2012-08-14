@@ -1,0 +1,124 @@
+#this yaml file is just a big hash that maps table attributes to values
+#hash with a value of hash {may_2010 => {full_name => "Steven Chung", secondary_info => "4A...", ...}}
+may_2010:
+  full_name: Steven Chung
+  secondary_info: 4A Computer Science/Business Option and Geography Three-Year (111111111)
+  mobile: 111.111.111
+  email: fake_email@email.com
+
+  address:
+    line_1: 111 Fake St.
+    city: Markham
+    province: Ontario
+    postal_code: U8D 0A1
+
+  #hash with list value full of hashes {sections => [{title => "Summary of...", points => ...}, {title => "Skills", ...}]}
+  sections:
+    - title: Summary of Qualifications
+      #hash with list value full of strings {points => ["Initiated...". "Engages...", ..."]
+      points:
+        - Ability and enthusiasm to do beyond what is expected
+        - Initiated independent and team development projects at work and for personal interest
+        - Engages in informative media including link_to(putting people first,http://www.experientia.com/blog/), link_to(Smashing Magazine,http://www.smashingmagazine.com/), link_to(Engadget,http://www.engadget.com/), link_to(TEDTalks,http://www.ted.com/), and related books
+        - Work experience as a developer, project coordinator, programming teacher, and documentation writer
+    - title: Technical Experience
+      points:
+        - title: Design
+          text: Photoshop, Illustrator, HTML/CSS/XPath, Prototype, JQuery
+        - title: Languages/Frameworks
+          text: Ruby on Rails, Java, Struts, Python, C#, C++, Qt, SQL
+    - title: Work Experience
+      items:
+        - title: Contract Developer
+          organization: link_to(Tooladex,http://www.blacklistdev.com/)
+          location: Toronto, Ontario
+          start_date:
+            month: 4
+            year: 2010
+          points:
+            - Thanks to connections through my supervisor at Xtreme Labs, I got this job to learn more about web development
+            - Integrated the Facebook/Twitter API and RSS feeds to someone's personal Ruby on Rails project
+        - title: Sr. Software Developer
+          organization: link_to(Xtreme Labs,http://www.xtremelabs.com/)
+          location: Toronto, Ontario
+          start_date:
+            month: 1
+            year: 2010
+          end_date:
+            month: 4
+            year: 2010
+          points:
+            - Worked for a start-up incubator and learned a lot through pair programming
+            - Developed the redesign of the sports twitter aggregator link_to(Twackle.com,http://www.twackle.com/) and various link_to(Twackle widgets,http://www.twackle.com/widget/generate_widget/caps_widget)
+            - Worked on all aspects of the redesign including Photoshop mock design, CSS styling, webpage parsing, creating dynamic forms, SQL table refactoring, cache management, Ruby Spec testing, Test Driven Development
+        - title: Cardiac Segmentation Software Developer
+          organization: link_to("Sunnybrook Health Sciences Center, IRCCI",http://www.sunnybrook.ca/research/?page=sri_proj_ircci_home)
+          location: North York, Ontario
+          start_date:
+            month: 5
+            year: 2009
+          end_date:
+            month: 8
+            year: 2009
+          points:
+            - Joined a hospital because of my personal interest to help others and learn a variety of subjects
+            - Developed custom user interfaces and a multi-threaded networking plug-in for link_to(VURTIGO,http://vurtigo.ca/Welcome.html), a real-time MRI visualization program
+            - Created Python script for data processing and restructured a heart segmentation MATLAB program
+    - title: Education
+      items:
+        - title: Honours Computer Science/Business Option
+          organization: Bachelor of Computer Science, University of Waterloo
+          location: Waterloo, Ontario
+          start_date:
+            month: 1
+            year: 2008
+          points_titles:
+            - text: "link_to(CS 489: Human Computer Interaction, http://hci.uwaterloo.ca/courses/CS489/f09/)"
+              points:
+                - Used observations and interviews to create iterations of a prototype scheduling system for a dental office
+                - Analyzed user needs and prototype effectiveness with the link_to(contextual design,http://en.wikipedia.org/wiki/Contextual_design) process, using different models (flow, cultural, etc.), User Environment Design, and Heuristic Evaluation
+                - Received an offer to commercialize the research
+            - text: "link_to(DAC 201: Designing Digital Images and Hypertext,http://www.ucalendar.uwaterloo.ca/1011/COURSE/course-DAC.html#DAC201)"
+              points:
+                - Learning how to analyze, critique and create designs to achieve a purpose using the appropriate grammar and learning design structures
+                - Creating an instructional flash module to teach others design concepts
+        - title: Geography Three-Year
+          organization: Bachelor of Environmental Studies, University of Waterloo
+          location: Waterloo, Ontario
+          start_date:
+            month: 9
+            year: 2008
+          points:
+            - A concurrent multidisciplinary degree for my personal interest in nature and helping others
+            - Primarily studying city planning and human geography, but also geographic information systems and naturepage_break()
+    - title: Clubs and Groups
+      items:
+        - title: Intramural Basketball Player
+          organization: link_to(Team 1337,http://intramurals.uwaterloo.ca/teams.php?team=4637)
+          location: Waterloo, Ontario
+          start_date:
+            month: 5
+            year: 2010
+          points:
+            - Just trying to be physically active by playing some ball
+        - title: Team Lead
+          organization: Abstractive Software
+          location: Waterloo, Ontario
+          start_date:
+            month: 1
+            year: 2009
+          end_date:
+            month: 11
+            year: 2009
+          points:
+            - Co-founded Abstractive Software, a student group working together to gain development experience and create something helpful to the world
+            - Started a project, StopNow, a framework that reacts to computer usage patterns by triggering plug-ins
+            - Learned about the cooperative and technological challenges of beginning a team project as a student
+    - title: Activities and Interests
+      points:
+        - Created an open source project that generated this resume, see the handwritten HTML/CSS on this resume and the link_to(Mercurial repository,http://bitbucket.org/schung/resume-generator/src)
+        - "Subscribed to the following related RSS feeds: link_to(Smashing Magazine,http://www.smashingmagazine.com/), link_to(Signal vs. Noise,http://37signals.com/svn/), link_to(ignorethecode.net,http://ignorethecode.net/blog/), link_to(putting people first,http://www.experientia.com/blog/), link_to(Engadget,http://www.engadget.com/), etc."
+        - Read soft skills related books such as link_to(Making Things Happen,http://www.amazon.com/Making-Things-Happen-Mastering-Management/dp/0596517718) by Scott Berkun, and link_to(On Writing Well,http://www.amazon.com/Writing-Well-30th-Anniversary-Nonfiction/dp/0060891548) by William K. Zinsser
+        - Engages in other informative media during spare time including link_to(TEDTalks,http://www.ted.com/), link_to(CBC's The National,http://www.cbc.ca/thenational/), link_to(Toronto planning-related RSS feeds,http://spacingtoronto.ca/), and link_to(documentaries,http://en.wikipedia.org/wiki/Helvetica_%28film%29)
+        - Experience with independent weight training and personal fitness for over seven years
+        - My thing is listening to music and just hanging out

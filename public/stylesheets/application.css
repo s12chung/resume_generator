@@ -1,0 +1,84 @@
+h1, h2, h3, h4, h5, h6, div, span, ol, ul, li {
+    /*Reset here because of jobmine*/
+    margin: 0;
+}
+
+.content {
+    /*http://unitinteractive.com/blog/blog-images/BetterFontStacks.pdf*/
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    margin-top: 1em;
+}
+
+a { color: #111; text-decoration: none; border-bottom: 1px dotted #111; }
+a:visited { color: #555; border-color: #555; }
+a:hover { color: #FFF; background-color: #111; }
+a:active { background-color: #999; }
+
+a.image { color: #FFF; text-decoration: none; border-bottom: 0; }
+a.image:visited { color: #FFF; }
+a.image:hover { color: #FFF; background-color: #FFF; }
+a.image:active { background-color: #FFF; }
+
+.link-icons {
+    float: left;
+    margin-left: 10px;
+    margin-top: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #111;
+    /*http://unitinteractive.com/blog/blog-images/BetterFontStacks.pdf*/
+    /*font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;    */
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 2em;
+    line-height: 1.2em;
+    float: left;
+}
+
+h2 {
+    font-size: 1.15em;
+    margin-top: .75em;
+    margin-bottom: .25em;
+    line-height: 1.5em;
+}
+
+h4 {
+    font-weight: normal;
+    margin-bottom: .25em;
+    margin-top: .75em;
+}
+
+h5 {
+    float: left;
+}
+
+.dates {
+    float: left;
+    margin-left: 5px;
+}
+
+.item {
+    margin-bottom: 1em;
+}
+
+.item > .header {
+    margin-bottom: .5em;
+}
+
+ul.points {
+    color: #444;
+    list-style: circle;
+}
+.points li {
+    margin-bottom: .25em;
+    margin-left: 16px;
+    padding-left: 4px;
+}
+
+.points .title {
+    color:#222;
+}

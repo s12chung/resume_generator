@@ -1,0 +1,30 @@
+<% content_for :page_title, "#{c_s @resume.full_name} | " %>
+
+<div class="grid_12">
+  <div class="clearfix">
+    <h1><%= c_s @resume.full_name %></h1>
+    <div class="link-icons">
+      <% unless @resume.linkedin.nil? %>
+          <%= link_to image_tag("http://developer.linkedin.com/servlet/JiveServlet/download/1101-13-1058/LinkedIn_Logo16px.png"), @resume.linkedin, :class => :image %>
+      <% end %>
+    </div>
+  </div>
+
+  <%= c_s @resume.secondary_info %>
+</div>
+
+<div class="grid_6">
+  <%= render :partial => "address", :object => @resume.address %>
+</div>
+<div class="grid_2">
+  M:&nbsp;<%= c_s @resume.mobile %>
+</div>
+<div class="grid_4">
+  E:&nbsp;<%= mail_to @resume.email %>
+</div>
+<div class="clear"></div>
+
+<div class="grid_12">
+  <%= render :partial => "section", :collection => @resume.sections %>
+</div>
+<div class="clear"></div>
